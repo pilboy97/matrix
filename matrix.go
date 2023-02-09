@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-var ErrWrongSize = errors.New("size of the matrix is wrong")
+var ErrWrongSize = errors.New("wrong size of the matrix")
 var ErrNotSquareMatrix = errors.New("the matrix is not a square matrix")
 var ErrHasNoInvereMatix = errors.New("the matrix has no inverse matrix")
 
