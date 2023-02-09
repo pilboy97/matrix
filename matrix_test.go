@@ -1,8 +1,9 @@
 package matrix_test
 
 import (
-	"matrix"
 	"testing"
+
+	"github.com/pilboy97/matrix"
 )
 
 func TestAdd(t *testing.T) {

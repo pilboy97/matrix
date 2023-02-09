@@ -2,8 +2,9 @@ package matrix_test
 
 import (
 	"math"
-	"matrix"
 	"testing"
+
+	"github.com/pilboy97/matrix"
 )
 
 func TestMove2(t *testing.T) {
