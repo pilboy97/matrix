@@ -1,4 +1,4 @@
-module matrix
+module github.com/pilboy97/matrix
 
 go 1.18
 

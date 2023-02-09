@@ -66,6 +66,19 @@ func TestInv(t *testing.T) {
 	}
 }
 
+func TestMatrix(t *testing.T) {
+	X := matrix.MakeMat(2, 3, 1, 2, 3, 4, 5, 6)
+
+	if !X.Row(1).Equal(matrix.MakeMat(1, 3, 4, 5, 6)) {
+		t.Log(X.Row(1))
+		t.Fail()
+	}
+
+	if !X.Col(1).Equal(matrix.MakeMat(2, 1, 2, 5)) {
+		t.Log(X.Col(1))
+		t.Fail()
+	}
+}
 func TestJoin(t *testing.T) {
 	X := matrix.MakeMat(1, 3, 1, 2, 3)
 	Y := matrix.MakeMat(1, 3, 4, 5, 6)
